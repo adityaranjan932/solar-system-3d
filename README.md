@@ -243,6 +243,3 @@ Created as a Frontend Developer Assignment demonstrating:
 - Interactive 3D graphics
 - Modern JavaScript practices
 
----
-
-**Note**: This project demonstrates a complete 3D solar system simulation meeting all assignment requirements with additional bonus features for enhanced user experience.
