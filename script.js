@@ -1,16 +1,3 @@
-/**
- * 3D Solar System Simulation
- * Frontend Developer Assignment
- * 
- * Features:
- * - 3D planets orbiting the sun using Three.js
- * - Real-time speed controls for each planet
- * - Mobile responsive design
- * - Interactive camera controls
- * - Pause/Resume functionality
- * - Dark/Light theme toggle
- * - Planet information on hover
- */
 
 class SolarSystem {
     constructor() {
