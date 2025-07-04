@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>3D Solar System Explorer</h1>
+            <p>Interactive 3D simulation with real-time speed controls</p>
+        </header>
+
+        <!-- Main 3D Canvas -->
+        <div class="scene-container">
+            <canvas id="solar-system-canvas"></canvas>
+            
+            <!-- Loading indicator -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading Solar System...</p>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <div class="panel-header">
+                <h3>Planet Speed Controls</h3>
+                <div class="global-controls">
+                    <button id="pause-resume-btn" class="btn primary">⏸️ Pause</button>
+                    <button id="theme-toggle" class="btn secondary">🌙 Dark Mode</button>
+                </div>
+            </div>
+            
+            <div class="planet-controls" id="planet-controls">
+                <!-- Planet controls will be dynamically generated -->
+            </div>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="info-panel" id="info-panel">
+            <div class="info-content">
+                <h4 id="planet-name">Solar System</h4>
+                <div id="planet-details">
+                    <p>Hover over a planet to see details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- OrbitControls for camera movement -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
